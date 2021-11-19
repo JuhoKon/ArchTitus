@@ -49,6 +49,12 @@ PKGS=(
 'ttf-roboto'
 'zoom' # video conferences
 'snap-pac'
+'feh'
+'i3'
+'i3-gaps'
+'fish'
+'docker'
+'docker-compose'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -57,10 +63,11 @@ done
 
 export PATH=$PATH:~/.local/bin
 cp -r $HOME/ArchTitus/dotfiles/* $HOME/.config/
+cp $HOME/ArchTitus/plasma-i3.desktop $HOME/usr/share/xsessions/
 pip install konsave
-konsave -i $HOME/ArchTitus/kde.knsv
+konsave -i $HOME/ArchTitus/newprofile.knsv
 sleep 1
-konsave -a kde
+konsave -a newprofile
 
 echo -e "\nDone!\n"
 exit
