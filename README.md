@@ -41,6 +41,24 @@ __[Arch Linux Installation Guide](https://github.com/rickellis/Arch-Linux-Instal
 
 #5: Find your network, and run `station [device name] connect [network name]`, enter your password and run `exit`. You can test if you have internet connection by running `ping google.com`. 
 
+### After setup
+
+To install node & fish themes run these.
+
+`curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher`
+`fisher install jorgebucaran/nvm.fish`
+
+`curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
+`omf update && omf install batman`
+
+`nvm install latest`
+`npm install --global yarn`
+
+In fish terminal
+`fish && set --universal nvm_default_version latest`
+
+Fish as default terminal:
+`chsh -s /bin/fish`
 ## Credits
 
 - Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic
