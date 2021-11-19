@@ -63,7 +63,7 @@ done
 
 export PATH=$PATH:~/.local/bin
 cp -r $HOME/ArchTitus/dotfiles/* $HOME/.config/
-cp $HOME/ArchTitus/plasma-i3.desktop $HOME/usr/share/xsessions/
+cp $HOME/ArchTitus/plasma-i3.desktop /usr/share/xsessions/
 pip install konsave
 konsave -i $HOME/ArchTitus/newprofile.knsv
 sleep 1
